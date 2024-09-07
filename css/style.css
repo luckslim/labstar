@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: aliceblue;
+    text-align: center;
+}
+h1{
+    margin-top: 100px;
+   margin-bottom: -100px;
+}
+header{
+    background-image: url("../img/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.container{
+    
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+
+}
+.box{
+    width: 50%;
+}
+.box span{
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.content{
+    text-align: center;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0 2%;
+    width: auto;
+}
+.box-content{
+    width:50%;
+    margin-top: 200px;
+}
+.box-content span{
+    margin: 0 auto;
+    max-width: 100px;
+}
+.box-content span img{
+    width:90%;
+    animation-name: animate;
+    position: relative;
+    animation: animate 12s infinite;
+}
+@keyframes animate{
+    0%   {bottom: 0px;}
+    50%  {bottom: 105px;}
+    100% {bottom: 0px;}
+}
+
+
+
+.titulo-sequence::before {
+    content: "Texto 1";
+    animation: changeTitulo 20s infinite;
+}
+
+@keyframes changeTitulo {
+    0% { content: "Shaping Tomorrow Through Innovation"; }
+    33% { content: "Where Ideas Ignite the Future"; }
+    66% { content: "Pioneering Science, Empowering Progress"; }
+    100% { content: "Shaping Tomorrow Through Innovation"; }
+}
+
+
+.text-sequence::before {
+    content: "Texto 1";
+    animation: changeText 15s infinite;
+}
+
+@keyframes changeText {
+    0% { content: "Innovating for a brighter future. At STAR Lab, we push the boundaries of science and technology to create sustainable solutions for tomorrow's world."; }
+    33% { content: "Where science meets innovation. STAR Lab is dedicated to cutting-edge research that transforms industries and improves lives globally."; }
+    66% { content: "Unlocking the power of discovery. STAR Lab is a hub for visionary thinkers and groundbreaking research, driving progress across all scientific fields."; }
+    100% { content: "Innovating for a brighter future. At STAR Lab, we push the boundaries of science and technology to create sustainable solutions for tomorrow's world."; }
+}
+
